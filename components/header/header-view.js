@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import CtaBtnLink from "../reusables/cta-link-btn";
-import siteLogo from "../assets/site-logo.png";
+import CtaBtnLink from "../../reusables/cta-link-btn";
+import logoFull from "../../assets/logos/logo-full.png";
 
 const navItems = [
   {
@@ -23,15 +23,15 @@ const navItems = [
   // },
 ];
 
-function Header() {
+function HeaderView() {
   const [isNavMenuShown, setIsNavMenuShown] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-primary-theme-color py-4">
-      <div className="site-container">
+      <div className="_container">
         <div className="flex items-center">
           <Link href="/">
-            <Image src={siteLogo} alt="logo" />
+            <Image src={logoFull} alt="logo" />
           </Link>
 
           {/* MD SCREEN(768px) AND ABOVE NAV-MENU */}
@@ -97,4 +97,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderView;

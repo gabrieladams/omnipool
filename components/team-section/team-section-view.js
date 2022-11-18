@@ -5,10 +5,10 @@ const teamMember = {
     "John Doe is board certified, practicing physician in Casper, Wyoming since 2010. He holds BS and MS degrees in Mechanical Engineering, a PhD in Physiology and a MD from Temple University, followed by residency and fellowship in radiology at Stanford University. He founded McGinley Orthopedics in 2012",
 };
 
-function HomeSectionEight() {
+function TeamSectionView() {
   return (
     <section className="py-[104px] text-center text-white">
-      <div className="site-container">
+      <div className="_container">
         <h1 className="section-title mb-12">Our team</h1>
 
         <div className="row">
@@ -42,4 +42,4 @@ function HomeSectionEight() {
   );
 }
 
-export default HomeSectionEight;
+export default TeamSectionView;

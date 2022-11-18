@@ -1,7 +1,7 @@
-function Footer() {
+function FooterView() {
   return (
     <footer className="space-y bg-primary-theme-color text-[13px] text-white/80">
-      <div className="site-container">
+      <div className="_container">
         <p className="mb-4">
           Rialto Markets LLC (“Rialto”) is registered with the Securities and
           Exchange Commission (“SEC”) as a broker-dealer, member of Financial
@@ -33,4 +33,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default FooterView;

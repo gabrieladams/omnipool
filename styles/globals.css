@@ -23,12 +23,8 @@
 
 @layer components {
   /* GRID */
-  .site-container {
+  ._container {
     @apply container max-w-[1140px] px-[15px];
-  }
-
-  .app-container {
-    @apply container max-w-[1180px];
   }
 
   .row {
@@ -40,6 +36,11 @@
   }
 
   /* BTN */
+
+  .btn {
+    @apply rounded-[4px] text-center uppercase transition-colors duration-150 ease-linear;
+  }
+
   .site-btn {
     @apply inline-block rounded-[4px] border-[2px] border-highlight-color bg-highlight-color text-center font-bold uppercase text-white transition-colors duration-150 ease-linear hover:bg-transparent;
   }
@@ -113,30 +114,30 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.section-one {
-  background-image: url(../assets/images/home/section-01/bg.png);
+.hero-section {
+  background-image: url(../assets/images/hero-section/bg.png);
 }
 
-.section-one::after {
+.hero-section::after {
   background-image: linear-gradient(200deg, #0c0a1d75 5%, #0c0a1d 100%);
 }
 
-.section-three-bg-img {
-  background-image: url(../assets/images/home/section-03/bg.jpg);
+.features-section-bg-img {
+  background-image: url(../assets/images/features-section/bg.jpg);
 }
 
-.section-four-col-two-item-bg-img {
-  background-image: url(../assets/images/home/section-04/bg.png);
+.innovation-opportunity-bg-img {
+  background-image: url(../assets/images/innovation-opportunities-section/bg.png);
 }
 
-.section-seven-bg-img {
-  background-image: url(../assets/images/home/section-07/bg.jpg);
+.invest-section-bg-img {
+  background-image: url(../assets/images/invest-section/bg.jpg);
 }
 
-.section-ten-bg-img {
-  background-image: url(../assets/images/home/section-10/bg.jpg);
+.faqs-section-bg-img {
+  background-image: url(../assets/images/faqs-section/bg.jpg);
 }
 
 .team-member-img {
-  background-image: url(../assets//images/home/section-08/img.jpg);
+  background-image: url(../assets/images/team-section/img.jpg);
 }

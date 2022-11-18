@@ -1,10 +1,10 @@
 import Image from "next/image";
-import img from "../../assets/images/home/section-05/img.png";
+import img from "../../assets/images/shout-out-section/img.png";
 
-function HomeSectionFive() {
+function ShoutOutSectionView() {
   return (
     <section className="space-b">
-      <div className="site-container">
+      <div className="_container">
         <div className="flex flex-col items-center rounded-[4px] bg-sec-theme-color p-6 md:flex-row lg:px-[72px] lg:py-[72px]">
           <Image
             src={img}
@@ -35,4 +35,4 @@ function HomeSectionFive() {
   );
 }
 
-export default HomeSectionFive;
+export default ShoutOutSectionView;

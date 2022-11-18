@@ -1,13 +1,13 @@
 import Image from "next/image";
-import img from "../../assets/images/home/section-06/img.png";
+import img from "../../assets/images/about-section/img.png";
 
-function HomeSectionSix() {
+function AboutSectionView() {
   return (
     <section className="space-b text-white">
-      <div className="site-container">
+      <div className="_container">
         <div className="row items-center">
           <div className="col basis-full md:basis-6/12">
-            <h1 className="section-title mb-4">Engineering is in our bones</h1>
+            <h1 className="section-title mb-6">Engineering is in our bones</h1>
 
             <p className="mb-4 text-white/80">
               McGinley Orthopedics strives to elevate the standard of care in
@@ -59,4 +59,4 @@ function HomeSectionSix() {
   );
 }
 
-export default HomeSectionSix;
+export default AboutSectionView;

@@ -1,12 +1,12 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
+import HeaderView from "../components/header/header-view";
+import FooterView from "../components/footer/footer-view";
 
 function LayoutSite({ children }) {
   return (
     <div>
-      <Header />
+      <HeaderView />
       {children}
-      <Footer />
+      <FooterView />
     </div>
   );
 }

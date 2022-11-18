@@ -1,15 +1,15 @@
-import Header from "../components/header";
-import AppBackdrop from "../components/app-backdrop";
+import HeaderView from "../components/header/header-view";
+import BackdropView from "../components/backdrop/backdrop-view";
 
 function LayoutsAuth({ children }) {
   return (
     <>
-      <Header />
-      <div className="app-container relative z-10 h-screen">
+      <HeaderView />
+      <div className="_container relative z-10 h-screen">
         <div className="flex h-full items-center">{children}</div>
       </div>
 
-      <AppBackdrop />
+      <BackdropView />
     </>
   );
 }

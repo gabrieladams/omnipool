@@ -1,7 +1,7 @@
-import logo from "../../assets/app-logo.png";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../assets/logos/logo.png";
 
 function AuthCardView({ formContent }) {
   const router = useRouter();

@@ -1,10 +1,10 @@
 import Link from "next/link";
 import CtaBtnLink from "../../reusables/cta-link-btn";
 
-function HomeSectionOne() {
+function HeroSectionView() {
   return (
-    <section className="section-one relative bg-cover bg-center bg-no-repeat pt-[72px] pb-[96px] text-center text-white after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] sm:pt-[96px] xl:pb-[104px] xl:pt-[180px]">
-      <div className="site-container">
+    <section className="hero-section relative bg-cover bg-center bg-no-repeat pt-[72px] pb-[96px] text-center text-white after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] sm:pt-[96px] xl:pb-[104px] xl:pt-[180px]">
+      <div className="_container">
         <div className="relative z-10 flex flex-col items-center">
           <h1 className="mb-4 text-[36px] font-extrabold uppercase leading-normal tracking-[2px] md:text-[40px] lg:text-[52px] lg:leading-[76px] xl:text-[72px]">
             <span className="block text-highlight-color">
@@ -37,4 +37,4 @@ function HomeSectionOne() {
   );
 }
 
-export default HomeSectionOne;
+export default HeroSectionView;

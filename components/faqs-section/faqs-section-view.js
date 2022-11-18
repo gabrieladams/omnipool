@@ -9,7 +9,7 @@ const faq = {
     "McGinley Orthopedics engineers “must-buy” surgical tools to eliminate the manual process and replace them with state of the art technology. Our two primary products are the IntelliSense® orthopedic drill and the Lever Action Plate System®. Each of these FDA-cleared products are currently in-market and represent the first-to-market product in an expansive future product line. ",
 };
 
-function HomeSectionTen() {
+function FaqsSectionView() {
   const [clickedFaqId, setClickedFaqId] = useState(1);
   //   const faqAnswerElem = useRef();
 
@@ -20,8 +20,8 @@ function HomeSectionTen() {
   //   });
 
   return (
-    <section className="space-y section-ten-bg-img  bg-img overlay relative text-white after:bg-gradient-to-tr after:from-primary-theme-color after:to-primary-theme-color/80">
-      <div className="site-container relative z-10">
+    <section className="space-y faqs-section-bg-img bg-img overlay relative text-white after:bg-gradient-to-tr after:from-primary-theme-color after:to-primary-theme-color/80">
+      <div className="_container relative z-10">
         <h1 className="section-title mb-12">Frequently asked questions</h1>
 
         <div className="rounded-[4px] border border-sec-theme-color">
@@ -67,4 +67,4 @@ function HomeSectionTen() {
   );
 }
 
-export default HomeSectionTen;
+export default FaqsSectionView;

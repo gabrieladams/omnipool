@@ -1,9 +1,9 @@
 import CtaBtnLink from "../../reusables/cta-link-btn";
 
-function HomeSectionSeven() {
+function InvestSectionView() {
   return (
-    <section className="space-y section-seven-bg-img bg-img overlay relative text-center text-white  after:bg-gradient-to-tr after:from-primary-theme-color after:to-primary-theme-color/80">
-      <div className="site-container relative z-10 flex flex-col items-center">
+    <section className="space-y invest-section-bg-img bg-img overlay relative text-center text-white  after:bg-gradient-to-tr after:from-primary-theme-color after:to-primary-theme-color/80">
+      <div className="_container relative z-10 flex flex-col items-center">
         <span className="mb-2 block text-[20px] capitalize md:text-[28px] lg:text-[32px]">
           Invest in medical progress
         </span>
@@ -33,4 +33,4 @@ function HomeSectionSeven() {
   );
 }
 
-export default HomeSectionSeven;
+export default InvestSectionView;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "../../assets/site-logo.png";
+import img from "../../assets/logos/logo-full.png";
 
 const items = [
   {
@@ -28,10 +28,10 @@ const items = [
   },
 ];
 
-function HomeSectionThree() {
+function FeaturesSectionView() {
   return (
-    <section className="space-y overlay section-three-bg-img bg-img relative text-center after:bg-gradient-to-tr after:from-primary-theme-color after:to-primary-theme-color/80">
-      <div className="site-container relative z-10">
+    <section className="space-y overlay features-section-bg-img bg-img relative text-center after:bg-gradient-to-tr after:from-primary-theme-color after:to-primary-theme-color/80">
+      <div className="_container relative z-10">
         <h3 className="mb-12 text-[24px] uppercase text-white">Featured on</h3>
 
         <div className="row flex-col justify-center sm:flex-row sm:px-[15px] lg:px-0">
@@ -53,4 +53,4 @@ function HomeSectionThree() {
   );
 }
 
-export default HomeSectionThree;
+export default FeaturesSectionView;

@@ -1,11 +1,11 @@
-import img from "../../assets/images/home/section-09/img.png";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import img from "../../assets/images/investment-guide-section/img.png";
 
-function HomeSectionNine() {
+function InvestmentGuideSectionView() {
   return (
     <section className="space-b">
-      <div className="site-container">
+      <div className="_container">
         <div className="flex flex-wrap items-center rounded-[4px] bg-sec-theme-color p-12 sm:p-[72px] md:p-12 lg:p-[72px]">
           <div className="basis-full md:basis-4/12">
             <Image
@@ -30,4 +30,4 @@ function HomeSectionNine() {
   );
 }
 
-export default HomeSectionNine;
+export default InvestmentGuideSectionView;

@@ -10,6 +10,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        {/* <script src="https://player.vimeo.com/api/player.js" async></script> */}
       </Head>
       <body>
         <Main />

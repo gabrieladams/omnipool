@@ -1,5 +1,7 @@
 import ScreensHome from "../screens/home";
 
-export default function Home() {
+function Home() {
   return <ScreensHome />;
 }
+
+export default Home;

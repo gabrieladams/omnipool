@@ -1,10 +1,10 @@
 import Link from "next/link";
 import CtaBtnLink from "../../reusables/cta-link-btn";
 
-function HomeSectionFour() {
+function InnovationOpportunitesSectionView() {
   return (
     <section className="space-y text-white">
-      <div className="site-container">
+      <div className="_container">
         <div className="row items-center">
           <div className="col basis-full md:basis-6/12">
             <h4 className="relative mb-7 inline-block pb-4 text-[20px] uppercase tracking-[2px] after:absolute after:-bottom-[2px] after:left-0 after:h-[2px] after:w-[80%] after:bg-white after:content-['']">
@@ -44,7 +44,7 @@ function HomeSectionFour() {
               return (
                 <div
                   key={item}
-                  className="section-four-col-two-item-bg-img mb-6 rounded-[4px] bg-cover bg-center bg-no-repeat p-6 pt-[144px]"
+                  className="innovation-opportunity-bg-img mb-6 rounded-[4px] bg-cover bg-center bg-no-repeat p-6 pt-[144px]"
                 >
                   <h1 className="text-[32px] leading-[36px]">Intellisense</h1>
 
@@ -67,4 +67,4 @@ function HomeSectionFour() {
   );
 }
 
-export default HomeSectionFour;
+export default InnovationOpportunitesSectionView;
