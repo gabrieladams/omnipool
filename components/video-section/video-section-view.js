@@ -1,9 +1,12 @@
 // import { useState } from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
+import LandingPageCallToAction from "../../reusables/landing-page-call-to-action";
 
 function VideoSectionView() {
   //   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const { pathname } = useRouter();
 
   return (
     <section className="space-b relative">
@@ -66,12 +69,24 @@ function VideoSectionView() {
             </button> */}
         </div>
         {/* #1a1544 */}
-        <div className="rounded-b-[4px] bg-sec-theme-color p-2 text-center md:p-4">
-          <h2 className="mb-2 text-[20px] text-highlight-color md:text-[24px] lg:text-[28px]">
+        <div
+          className={`rounded-b-[4px] bg-sec-theme-color p-2 text-center md:p-4 ${
+            pathname === "/home-current" && "md:pb-6"
+          } `}
+        >
+          <h2 className="mb-2 text-[20px] text-highlight-color-sec md:text-[24px] lg:text-[28px]">
             Philip Anthony Anglade
           </h2>
 
-          <p className="font-bold uppercase text-white">Omnipool brief</p>
+          <p
+            className={` font-bold uppercase text-white ${
+              pathname === "/home-current" && "mb-4 text-[20px]"
+            }`}
+          >
+            Omnipool brief
+          </p>
+
+          {pathname === "/home-current" && <LandingPageCallToAction />}
         </div>
       </div>
     </section>

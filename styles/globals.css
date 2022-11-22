@@ -38,35 +38,65 @@
   /* BTN */
 
   .btn {
-    @apply rounded-[4px] text-center uppercase transition-colors duration-150 ease-linear;
+    @apply inline-block rounded-[4px] border-[2px] text-center font-bold uppercase transition-colors duration-150 ease-linear;
   }
+
+  .btn-sm {
+    @apply p-3;
+  }
+
+  .btn-md {
+    @apply py-3 px-6;
+  }
+
+  .btn-lg {
+    @apply py-3 px-9;
+  }
+
+  .btn-xl {
+    @apply py-3 px-12;
+  }
+
+  .btn-2xl {
+    @apply py-3 px-14;
+  }
+
+  .btn-primary {
+    @apply border-hightlight-color-three hover:bg-hightlight-color-three bg-transparent;
+  }
+
+  .btn-secondary {
+    @apply border-white bg-white text-[#15183f] hover:bg-transparent hover:text-white;
+  }
+
+  .btn-tertiary {
+    @apply border-highlight-color-one bg-highlight-color-one hover:bg-transparent;
+  }
+
+  .btn-outline {
+    @apply bg-transparent;
+  }
+
+  .btn-white {
+    @apply border-white bg-white text-[#15183f] hover:bg-transparent hover:text-white;
+  }
+
+  .btn-outline-highlight-color-one {
+    @apply border-hightlight-color-one hover:bg-hightlight-color-one;
+  }
+
+  .btn-outline-highlight-color-three {
+    @apply border-hightlight-color-three hover:bg-hightlight-color-three;
+  }
+
+  /* .btn-highlight-color-one {} */
 
   .site-btn {
     @apply inline-block rounded-[4px] border-[2px] border-highlight-color bg-highlight-color text-center font-bold uppercase text-white transition-colors duration-150 ease-linear hover:bg-transparent;
   }
 
-  .site-btn-sm {
-    @apply py-3 px-6;
-  }
-
-  .site-btn-md {
-    @apply py-3 px-9;
-  }
-
-  .site-btn-lg {
-    @apply py-3 px-14;
-  }
-
   .app-btn {
     @apply rounded-[4px] text-center uppercase transition-colors duration-150 ease-linear;
-  }
-
-  .app-btn-lg {
-    @apply px-12 py-3;
-  }
-
-  .app-btn-sm {
-    @apply py-3;
   }
 
   .app-btn-fill {
@@ -111,7 +141,9 @@
 }
 
 * {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+
+  font-family: "Euclid Circular A", sans-serif;
 }
 
 .hero-section {

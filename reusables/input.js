@@ -1,15 +1,13 @@
-import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 
-function AuthCardFormFieldView({
-  type,
-  name,
-  value,
-  onChangeHandler,
-  label,
-  icon,
-}) {
+// type, name, value, onChangeHandler, label, icon
+
+function Input({ type, name, value, label, icon, onChange }) {
   const [isInputInFocus, setIsInputInFocus] = useState(false);
+
+  const labelRef = useRef();
+  const inputRef = useRef();
 
   useEffect(() => {
     if (window) {
@@ -25,7 +23,7 @@ function AuthCardFormFieldView({
   }, []);
 
   return (
-    <div className="relative mb-8">
+    <div className="relative">
       <label
         ref={labelRef}
         htmlFor={name}
@@ -39,19 +37,21 @@ function AuthCardFormFieldView({
       </label>
 
       <input
+        ref={inputRef}
+        onChange={onChange}
         type={type}
         name={name}
         value={value}
-        className="block w-full rounded-[4px] border border-white bg-transparent p-4 pl-[64px] transition-colors duration-150 ease-linear focus:border-highlight-color"
-        ref={inputRef}
-        onChange={onChangeHandler}
+        className="focus:border-highlight-three block w-full rounded-[4px] border border-white bg-transparent p-4 transition-colors duration-150 ease-linear"
       />
 
-      <div className="absolute top-0 left-0 flex h-full w-[63px] items-center">
-        <Image src={icon} alt="#" className="relative left-4" />
-      </div>
+      {icon && (
+        <div className="absolute top-0 left-0 flex h-full w-[63px] items-center">
+          <Image src={icon} alt="#" className="relative left-4" />
+        </div>
+      )}
     </div>
   );
 }
 
-export default AuthCardFormFieldView;
+export default Input;

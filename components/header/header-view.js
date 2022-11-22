@@ -3,13 +3,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
-import CtaBtnLink from "../../reusables/cta-link-btn";
+import LandingPageCallToAction from "../../reusables/landing-page-call-to-action";
 import logoFull from "../../assets/logos/logo-full.png";
 
 const navItems = [
   {
-    name: "Home",
+    name: "Home Initial",
     route: "/",
+  },
+
+  {
+    name: "Home Current",
+    route: "/home-current",
   },
 
   {
@@ -27,7 +32,7 @@ function HeaderView() {
   const [isNavMenuShown, setIsNavMenuShown] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-primary-theme-color py-4">
+    <header className="sticky top-0 left-0 z-50 w-full bg-primary-theme-color py-4">
       <div className="_container">
         <div className="flex items-center">
           <Link href="/">
@@ -70,7 +75,7 @@ function HeaderView() {
             })}
           </nav>
 
-          <CtaBtnLink className="ml-4 hidden md:block" />
+          <LandingPageCallToAction className="ml-4 hidden md:block" />
 
           <div className="relative ml-auto block md:hidden">
             <button

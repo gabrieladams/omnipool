@@ -16,11 +16,11 @@ function InvestmentGuideSectionView() {
           </div>
 
           <div className="basis-full md:basis-8/12 md:pl-12">
-            <h1 className="mb-6 text-[32px] uppercase leading-[36px] text-highlight-color sm:text-[36px] sm:leading-[40px] lg:text-[52px] lg:leading-[56px]">
+            <h1 className="mb-6 text-[32px] uppercase leading-[36px] text-highlight-color-sec sm:text-[36px] sm:leading-[40px] lg:text-[52px] lg:leading-[56px]">
               Download our investment guide
             </h1>
 
-            <Link href="#" className="site-btn site-btn-md">
+            <Link href="#" className="btn btn-md btn-tertiary">
               Get the guide
             </Link>
           </div>

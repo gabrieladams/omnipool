@@ -18,7 +18,7 @@ function TeamSectionView() {
                 key={item}
                 className="col basis-full md:basis-6/12 lg:basis-4/12"
               >
-                <div className="overlay relative mb-[30px] h-[360px] cursor-pointer rounded-t-[4px] border-b-[4px] border-highlight-color after:bg-primary-theme-color/60 after:transition-colors after:duration-150 after:ease-linear">
+                <div className="overlay relative mb-[30px] h-[360px] cursor-pointer rounded-t-[4px] border-b-[4px] border-highlight-color-sec after:bg-primary-theme-color/60 after:transition-colors after:duration-150 after:ease-linear">
                   <div className="team-member-img bg-img h-full rounded-t-[4px]"></div>
 
                   <div className="absolute left-0 bottom-0 z-10 w-full p-6 uppercase">

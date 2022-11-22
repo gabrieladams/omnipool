@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CtaBtnLink from "../../reusables/cta-link-btn";
+import LandingPageCallToAction from "../../reusables/landing-page-call-to-action";
 
 function InnovationOpportunitesSectionView() {
   return (
@@ -11,7 +12,7 @@ function InnovationOpportunitesSectionView() {
               Market opportunity
             </h4>
 
-            <span className="mb-7 block text-[48px] font-extrabold leading-[52px] text-highlight-color lg:text-[104px] lg:leading-[112px]">
+            <span className="mb-7 block text-[48px] font-extrabold leading-[52px] text-highlight-color-sec lg:text-[104px] lg:leading-[112px]">
               $7.4B
             </span>
 
@@ -32,7 +33,7 @@ function InnovationOpportunitesSectionView() {
               care and offering returns to their investors.
             </p>
 
-            <CtaBtnLink className="mb-[32px] md:mb-[56px]" />
+            <LandingPageCallToAction className="mb-[32px] md:mb-[56px]" />
 
             <p className="mb-12 md:mb-0">
               $5.25 per share | $100 minimum investment
@@ -50,7 +51,7 @@ function InnovationOpportunitesSectionView() {
 
                   <span className="mb-6 block">Handled Robotics</span>
 
-                  <span className="block text-[32px] font-bold leading-[36px] text-highlight-color">
+                  <span className="block text-[32px] font-bold leading-[36px] text-highlight-color-sec">
                     $2.5B
                   </span>
 

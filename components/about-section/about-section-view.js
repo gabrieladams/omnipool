@@ -35,7 +35,7 @@ function AboutSectionView() {
                       126
                     </span>
 
-                    <span className="block text-[16px] font-bold uppercase text-highlight-color lg:text-[20px]">
+                    <span className="block text-[16px] font-bold uppercase text-highlight-color-sec lg:text-[20px]">
                       Issued & pending patents
                     </span>
                   </div>

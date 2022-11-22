@@ -13,7 +13,7 @@ function ShoutOutSectionView() {
           />
 
           <div className="md:pl-12">
-            <h2 className="mb-4 text-[28px] text-highlight-color">
+            <h2 className="mb-4 text-[28px] text-highlight-color-sec">
               Redefines the technique of depth sensing...
             </h2>
 

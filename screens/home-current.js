@@ -10,7 +10,7 @@ import TeamSectionView from "../components/team-section/team-section-view";
 import InvestmentGuideSectionView from "../components/investment-guide-section/investment-guide-section-view";
 import FaqsSectionView from "../components/faqs-section/faqs-section-view";
 
-function ScreensHome() {
+function ScreensHomeCurrent() {
   return (
     <LayoutSite>
       <HeroSectionView />
@@ -27,4 +27,4 @@ function ScreensHome() {
   );
 }
 
-export default ScreensHome;
+export default ScreensHomeCurrent;

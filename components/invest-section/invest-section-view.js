@@ -1,4 +1,4 @@
-import CtaBtnLink from "../../reusables/cta-link-btn";
+import LandingPageCallToAction from "../../reusables/landing-page-call-to-action";
 
 function InvestSectionView() {
   return (
@@ -9,7 +9,9 @@ function InvestSectionView() {
         </span>
 
         <h1 className="mb-4 text-[28px] uppercase leading-[40px] md:text-[36px] md:leading-[48px] lg:text-[52px] lg:leading-[60px]">
-          <span className="text-highlight-color">Guesswork has no place</span>
+          <span className="text-highlight-color-sec">
+            Guesswork has no place
+          </span>
           <br />
           in the operating room
         </h1>
@@ -27,7 +29,7 @@ function InvestSectionView() {
           McGinley Orthopedics is on a mission to change that.
         </p>
 
-        <CtaBtnLink />
+        <LandingPageCallToAction />
       </div>
     </section>
   );
