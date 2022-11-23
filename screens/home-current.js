@@ -1,6 +1,5 @@
 import LayoutSite from "../layouts/layouts-site";
 import HeroSectionView from "../components/hero-section/hero-section-view";
-import VideoSectionView from "../components/video-section/video-section-view";
 import FeaturesSectionView from "../components/features-section/features-section-view";
 import InnovationOpportunitesSectionView from "../components/innovation-opportunities-section/innovation-opportunities-view";
 import ShoutOutSectionView from "../components/shout-out-section/shout-out-section-view";
@@ -14,7 +13,6 @@ function ScreensHomeCurrent() {
   return (
     <LayoutSite>
       <HeroSectionView />
-      <VideoSectionView />
       <FeaturesSectionView />
       <InnovationOpportunitesSectionView />
       <ShoutOutSectionView />

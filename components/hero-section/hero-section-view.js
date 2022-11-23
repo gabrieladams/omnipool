@@ -6,58 +6,43 @@ function HeroSectionView() {
   const { pathname } = useRouter();
 
   return (
-    <section
-      className={`
-    hero-section relative bg-cover bg-center bg-no-repeat  text-center text-white after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-['']  ${
-      pathname === "/"
-        ? "pb-[96px] pt-[72px] sm:pt-[96px] xl:pb-[104px] xl:pt-[180px]"
-        : "pt-[36px] pb-[36px] sm:pt-[36px] xl:pb-[48px] xl:pt-[48px]"
-    }
-    `}
-    >
+    <section className="hero-section bg-img relative py-[36px] text-center text-white after:absolute after:top-0 after:left-0 after:h-full after:w-full after:content-[''] xl:py-[48px]">
       <div className="_container">
         <div className="relative z-10 flex flex-col items-center">
-          <h1
-            className={`text-[36px] font-extrabold uppercase leading-normal tracking-[2px] md:text-[40px] lg:text-[52px] lg:leading-[76px]  ${
-              pathname === "/"
-                ? "mb-4 xl:text-[72px]"
-                : "mb-6 xl:mb-6 xl:text-[56px] xl:leading-[64px]"
-            }`}
-          >
+          <h1 className="mb-6 text-[36px] font-extrabold uppercase leading-normal tracking-[2px] md:text-[40px] lg:text-[52px] lg:leading-[76px] xl:mb-8 xl:text-[56px] xl:leading-[64px]">
             <span className="block text-highlight-color-sec">
               {pathname === "/" ? "Better engineering" : "Better Traders"}
             </span>
-            <span className="block">
-              {pathname === "/" ? "better patient outcomes" : "Better Profits"}
-            </span>
+
+            <span className="block">Better Profits</span>
           </h1>
 
-          {pathname === "/" && (
-            <p className="mb-[52px] text-[20px] text-white/90 md:text-[24px] lg:text-[28px]">
-              Invest In Medical Progress
-            </p>
-          )}
+          <LandingPageCallToAction className="mb-8" />
 
-          <LandingPageCallToAction
-            className={`${pathname === "/" && "mb-[52px] xl:mb-[104px]"}`}
-          />
+          <div className="w-full">
+            <div className="relative pt-[60.5%] sm:pt-[50.5%] md:pt-[35.5%]">
+              <iframe
+                src="https://player.vimeo.com/video/762085273?h=e01caaa8c6"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+                className="absolute top-0 left-0 h-full w-full"
+              ></iframe>
+            </div>
 
-          {pathname === "/" && (
-            <>
-              <Link
-                href="#"
-                className="text-highlight-color-sec md:text-[24px] lg:text-[28px]"
-              >
-                Invest $5K or More to Get Bonus Shares
-              </Link>
+            {/* bg-sec-theme-color */}
+            <div className="rounded-b-[4px]  p-2 pb-4 text-center md:p-4 md:pb-6">
+              <h2 className="mb-2 text-[20px] text-highlight-color-sec md:text-[24px] lg:text-[28px]">
+                Philip Anthony Anglade
+              </h2>
 
-              <p className="md:text-[24px] lg:text-[28px]">
-                $5.25 Per Share | $100 Minimum
+              <p className="mb-4 font-bold uppercase text-white md:text-[20px]">
+                Omnipool brief
               </p>
 
-              <Link href="#">Offering Circular</Link>
-            </>
-          )}
+              <LandingPageCallToAction />
+            </div>
+          </div>
         </div>
       </div>
     </section>
